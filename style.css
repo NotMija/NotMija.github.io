@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.colorbase {
+    background: linear-gradient(to bottom, white 60%, #86cde3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    background-image: url(cielo\ 2.jpg);
+    background-size: contain;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Lucida Handwriting;
+    background-repeat: repeat-x;
+}
+
+.web {
+    color: #86cde3;
+}
+
+nav {
+    background-color: rgba(50, 58, 168, 0.685);
+    width: 75%;
+    margin-top: 10px;
+    padding: 50px;
+    padding-top: 50px;
+    font-size: 2rem;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer {
+    background-color: gray;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+dl {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+.abs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#deportes {
+    background-image: url(cesped.jpg);
+    border-radius: 10px;
+}
+
+#videojuegos {
+    background-image: url(mando.jpg);
+    border-radius: 10px;
+}
+
+/* animacion flex */
+
+#hobbies {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 100%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#hobbies div {
+    color: #FFFFFF;
+    min-height: 200px;
+    max-height: 200px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    text-align: center;
+
+}
+
+#deportes,
+#videojuegos {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#deportes:hover {
+    filter: grayscale(0%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#deportes,
+#videojuegos {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#videojuegos {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#videojuegos:hover {
+    filter: grayscale(0%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#videojuegos {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.containerImg {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.zoom-image {
+    position: relative;
+}
+
+.zoom-image:hover {
+    height: 300px;
+    transition: transform 0.3s, top 0, 3s;
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+
+}
+.expansible{
+    z-index: 999999;
+}
+
+/* javascript */
+
+.expansible.expandido {
+    transform: scale(3);
+}
+
+/* Establece la transición para el efecto de escala */
+.expansible {
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+/* Establece la posición inicial para los elementos */
+.expansible {
+    transform: scale(1);
+}
+
+.popup {
+    display: flow-root;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -30%);
+    background-color: rgb(201, 198, 198);
+    padding: 20px;
+    border: 1px solid #012ec4a6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999999999;
+    border-radius: 20px;
+
+}
+
+/* Establece el estilo de la ventana emergente */
+.popup-content {
+    text-align: center;
+}
+
+/* Agrega un estilo de cierre (botón "X") a la ventana emergente */
+.popup-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #hobbies {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .futbol,
+    .videojuegos div {
+        font-size: 2.5rem;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #grid {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .futbol,
+    .videojuegos div {
+        font-size: 3.5rem;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+}
