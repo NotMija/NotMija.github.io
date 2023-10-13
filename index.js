@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     videojuegos.addEventListener('click', function () {
         togglePopup('popup-videojuegos');
     });
+    
 });
 
 //imagenes zoom

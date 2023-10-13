@@ -205,9 +205,6 @@ img {
     height: 250px;
 
 }
-.expansible{
-    z-index: 999999;
-}
 
 /* javascript */
 
@@ -215,19 +212,19 @@ img {
     transform: scale(3);
 }
 
-/* Establece la transición para el efecto de escala */
+
 .expansible {
     transition: transform 0.3s;
     cursor: pointer;
 }
 
-/* Establece la posición inicial para los elementos */
+
 .expansible {
     transform: scale(1);
 }
 
 .popup {
-    display: flow-root;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -236,7 +233,6 @@ img {
     padding: 20px;
     border: 1px solid #012ec4a6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 9999999999;
     border-radius: 20px;
 
 }
